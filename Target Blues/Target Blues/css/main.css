@@ -16,6 +16,7 @@ body {
 }
 .Community{
   text-align: center;
+    font-size: 30px;
 }
 
 body {
@@ -1378,7 +1379,7 @@ body.menu-is-open {
 .subhead {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
-  font-size: 1.8rem;
+  font-size: 20px;
   line-height: 1.333;
   text-transform: uppercase;
   letter-spacing: .25rem;
@@ -1390,7 +1391,7 @@ body.menu-is-open {
 }
 
 .item-title {
-  font-size: 2.4rem;
+  font-size: 3rem;
   line-height: 1.5;
   margin-top: 0;
   color: aqua;
@@ -1730,7 +1731,6 @@ body.menu-is-open {
 
 .header-nav__list a::before {
   display: block;
-  content: counter(ctr, decimal-leading-zero) ".";
   counter-increment: ctr;
   font-family: "Montserrat", sans-serif;
   font-size: 11px;
@@ -2407,7 +2407,8 @@ html.no-csstransitions .home-content__main {
  * ------------------------------------------------------------------- */
 @media only screen and (max-width:1600px) {
   .home-content h1 {
-    font-size: 12rem;
+    font-size: 10rem;
+    margin-top: 0%;
   }
 
   .home-content h3 {
@@ -2949,22 +2950,27 @@ html.no-csstransitions .home-content__main {
   position: relative;
 }
 
-.s-works::before {
-  content: "";
-  display: block;
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 50%;
-  bottom: 0;
-  right: 0;
-  width: 50%;
-  height: 100%;
-  opacity: .3;
-  background-color: rgba(0, 0, 0, 0.9);
-  background-image: url(../images/pattern.jpg);
-  background-size: 760px 380px;
+.s-workss{
+    padding-top: 18rem;
+    padding-bottom: 18rem;
+    position: relative;
 }
+.s-workss::before{
+    content: "";
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    opacity: .3;
+    background-color: rgba(0, 0, 0, 0.9);
+    background-size: 760px 380px;
+}
+
 
 /* ------------------------------------------------------------------- 
  * ## bricks/masonry
@@ -3953,8 +3959,9 @@ footer a {
 #jeet{
   width: 40%;
   text-align: justify;
-  font-size: 15px;
+  font-size: 20px;
   font-weight: normal;
+
 }
 #mr-jeet{
   margin-top: 0;
@@ -3969,7 +3976,7 @@ footer a {
 }
 #mr-jeet>img{
   float: right;
-  margin-top: -28%;
+  margin-top: 0%;
   margin-right: 20%;
 }
 @media (max-device-width:748px){
@@ -3980,7 +3987,8 @@ footer a {
     font-size: 15px;
     font-weight: normal;
     margin-left: 0;
-  }#mr-jeet>img{
+  }
+    #mr-jeet>img{
   float: none;
     margin-top: 0;
     margin-right: 0;
@@ -4023,4 +4031,17 @@ footer a {
 }
 #roboto{
   font-family: 'Roboto', sans-serif !important;
+}
+
+@media (max-device-width:748px) {
+  #roboto{
+    margin-top: 50%;
+  }
+  .home-content__main{
+    margin-top: 15%;
+  }
+  .header-logo img{
+    height: 80px!important;
+    width: 120px;
+  }
 }
