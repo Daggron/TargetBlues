@@ -2979,6 +2979,7 @@ html.no-csstransitions .home-content__main {
   margin-top: 7.2rem;
   max-width: 1100px;
   position: relative;
+
 }
 
 .masonry-wrap:after {
@@ -2995,7 +2996,7 @@ html.no-csstransitions .home-content__main {
 
 .masonry .grid-sizer,
 .masonry__brick {
-  width: 50%;
+  width: 100%;
 }
 
 .masonry__brick {
@@ -3004,7 +3005,6 @@ html.no-csstransitions .home-content__main {
 }
 
 .item-folio {
-  position: relative;
   overflow: hidden;
 }
 
@@ -4044,4 +4044,38 @@ footer a {
     height: 80px!important;
     width: 120px;
   }
+}
+
+.mainbox{
+  width: 100% !important;
+  margin-left: 10%;
+}
+.masonry{
+  width: 100%;
+}
+.masonry__brick{
+  width:25%;
+  margin-left: 1%;
+  margin-top: 1%;
+  border: 5px solid white;
+  border-radius: 5%;
+}
+.item-folio img{
+  height: 310px;
+  width: 310px;
+
+}
+
+@media (max-device-width: 780px) {
+  .masonry__brick{
+    width: 100%;
+  }
+  .item-folio img {
+    width: 340px;
+  }
+    .mainbox{
+      margin-left: 2%;
+    }
+
+
 }
